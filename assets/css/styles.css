@@ -84,9 +84,10 @@ Layout styles
 {
 	color: #fff;
 	background: #83092B;
-	padding: 1.6em 1.20em 0.3em 1.20em;
+	padding: 1.6em 1.20em 2.2em 1.20em;
 }
 
+.header-title { padding-top: 10px; }
 .header-heading { margin: 0; }
 
 .nav-bar
@@ -239,7 +240,8 @@ Wide styles
 
 @media (min-width: 42em)
 {
-	.header { padding: 1.5em 3em; }
+	.header-title { padding-top: 20px; }
+	.header { padding: 1.5em 3em 3.1em 3em; }
 	.nav-bar { padding: 1em 3em; }
 	.content { padding: 2em 3em; }
 	.footer { padding: 2em 3em; }
