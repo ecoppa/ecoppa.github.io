@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div id="content"></div>
+<script>
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.withCredentials = true;
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+var res = httpGet('http://www.ercoppa.org/github.php');
+console.log(res);
+
+document.getElementById("content").innerHTML=res;
+</script>
+</body>
+</html>
