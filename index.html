@@ -1,337 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Emilio Coppa - Academic Page - Sapienza University of Rome</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="Description" lang="en" content="Emilio Coppa - Academic page - Sapienza University of Rome">
-		<meta name="author" content="Emilio Coppa">
-		<meta name="robots" content="index, follow">
 
-		<!-- icons -->
-		<link rel="shortcut icon" href="favicon.ico">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Emilio Coppa - Academic Page - Sapienza University of Rome</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" lang="en" content="Emilio Coppa - Academic page - Sapienza University of Rome">
+	<meta name="author" content="Emilio Coppa">
+	<meta name="robots" content="index, follow">
 
-		<!-- Override CSS file - add your own CSS rules -->
-		<link rel="stylesheet" href="assets/css/styles.css">
+	<!-- icons -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-		<!-- Start Google Analytics code -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<!-- Override CSS file - add your own CSS rules -->
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-		  ga('create', 'UA-75279417-1', 'auto');
-		  ga('send', 'pageview');
+	<!-- Start Google Analytics code -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-		</script>
-		<!-- End Google Analytics code -->
+		ga('create', 'UA-75279417-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics code -->
 
-		<!-- script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script -->
-		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-		
-		<script
-		  src="https://code.jquery.com/jquery-3.3.1.min.js"
-		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		  crossorigin="anonymous"></script>
+	<!-- vue debug -->
+	<!-- script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script -->
+	<!-- production - version tested: https://cdn.jsdelivr.net/npm/vue@2.5.21 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-	</head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
 
-	<body>
-		<div id="app" class="container">
-			<div class="header">
-				<div style="float: left; margin: -23px 5px 0px -5px;" >
-					<img src="assets/img/sapienza.png" alt="sapienza logo" />
-				</div>
-				<div class="header-title">
-					<h2 class="header-heading" >Emilio Coppa</h2>
-					<h3 class="header-heading" >Sapienza University of Rome </h3>
-				</div>
-				
+</head>
+
+<body>
+	<div id="app" class="container">
+		<div class="header">
+			<div style="float: left; margin: -23px 5px 0px -5px;">
+				<img src="assets/img/sapienza.png" alt="sapienza logo" />
 			</div>
-			<div class="nav-bar">
-				<ul class="nav">
-					<li><a href="#info">Info</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#publications">Publications</a></li>
-					<li><a href="#teaching">Teaching</a></li>
+			<div class="header-title">
+				<h2 class="header-heading">Emilio Coppa</h2>
+				<h3 class="header-heading">Sapienza University of Rome </h3>
+			</div>
+
+		</div>
+		<div class="nav-bar">
+			<ul class="nav">
+				<li><a href="#info">Info</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#publications">Publications</a></li>
+				<li><a href="#teaching">Teaching</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="main">
+
+				<h2 id="info">Info</h2>
+				<hr>
+
+				<div style="padding-left: 20px;">
+
+					<b>Research interests:</b>
+					<div style="padding-left: 20px; padding-top: 10px;">My main research interests are in programming languages,
+						software systems and program analysis. During my PhD, I focused my work on the study of performance scalability
+						of software systems. In the last two years, I have investigated how program analysis techniques, such as symbolic
+						execution, can be exploited in the context of cybersecurity.</div>
+
+					<br />
+
+					<div style="display: table;">
+
+						<div style="display: table-row;">
+							<div style="display: table-cell; padding-right: 25px;">
+								<b>Position:</b>
+							</div>
+							<div style="display:table-cell;">
+								PostDoc at <a href="http://www.dis.uniroma1.it/">DIAG</a> with Prof. <a href="http://www.dis.uniroma1.it/~demetres/"
+								 target="_blank">Camil Demetrescu</a>.
+								Member of <a href="http://season-lab.github.io" target="_blank"><b>SEASON Lab</b></a>.<br />
+								Member of <a href="http://www.cis.uniroma1.it/en" target="_blank"><b>CIS Sapienza</b></a> research center for
+								Cyber Intelligence and Information Security.<br />
+								Member of <a href="http://cyberchallenge.it" target="_blank"><b>CyberChallenge.IT</b></a> organizing team.
+							</div>
+						</div>
+
+						<br />
+
+						<div style="display:table-row;">
+							<div style="display:table-cell; padding-right: 10px;">
+								<b>Email:</b>
+							</div>
+							<div style="display:table-cell;">
+								coppa [at] diag.uniroma1.it
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell; padding-right: 10px;">
+								<b>Office:</b>
+							</div>
+							<div style="display:table-cell;">
+								DIAG, Via Ariosto 25, Rome - 1st floor, room B118
+							</div>
+						</div>
+
+						<br />
+
+						<div style="display:table-row;">
+							<div style="display:table-cell; padding-right: 10px;">
+								<b>Full CV:</b>
+							</div>
+							<div style="display:table-cell;">
+								<a href="https://github.com/ecoppa/ecoppa.github.io/raw/master/cv.pdf">[PDF]</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<br /><br />
+
+				<h2 id="education">Education</h2>
+				<hr>
+
+				<div style="padding-left: 20px;">
+
+					<div style="display: table; border-collapse: separate; width: 100%;">
+
+						<div style="display:table-row;">
+							<div style="display:table-cell; width: 20%;">
+								Jan 2016 - Present
+							</div>
+							<div style="display:table-cell;">
+								<b>PostDoc</b> at Sapienza University of Rome<br />with Prof. <a href="http://www.dis.uniroma1.it/~demetres/"
+								 target="_blank">Camil Demetrescu</a> (demetres [at] dis.uniroma1.it).
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								Oct 2012 - Dic 2015
+							</div>
+							<div style="display:table-cell;">
+								<b>Ph.D.</b>&nbsp;<b>in Computer Science</b> at Sapienza University of Rome. <br />Advisor: Prof. <a href="http://wwwusers.di.uniroma1.it/~finocchi/"
+								 target="_blank">Irene Finocchi</a> (finocchi [at] di.uniroma1.it).
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								Apr 2015 - Jul 2015
+							</div>
+							<div style="display:table-cell;">
+								<b>Visitor at TU Darmstadt.</b> <br />Prof. <a href="https://www.cs.purdue.edu/homes/peugster/" target="_blank">Patrick
+									Eugster</a> (peugster [at] cs.purdue.edu).
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								Oct 2010 - Oct 2012
+							</div>
+							<div style="display:table-cell;">
+								<b>Master of Science in Engineering in Computer Science</b> (taught in English) at Sapienza University of Rome.
+								GPA 29.57/30. Final grade: 110/110 summa cum laude.<br />Thesis Advisor: Prof. <a href="http://www.dis.uniroma1.it/~demetres/"
+								 target="_blank">Camil Demetrescu</a> (demetres [at] dis.uniroma1.it).
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+							<div style="display:table-cell;">
+								<hr style="margin: 10px 0 10px 0;" />
+							</div>
+						</div>
+
+						<div style="display:table-row;">
+							<div style="display:table-cell;">
+								Sept 2007 - Oct 2010
+							</div>
+							<div style="display:table-cell;">
+								<b>Bachelor of Science in&nbsp;</b><b>Engineering in Computer Science</b><b>&nbsp;</b>at Sapienza University of
+								Rome. GPA: 26.7/30. Final grade: 110/110. <br />Thesis advisor: Prof. <a href="http://www.dis.uniroma1.it/~demetres/"
+								 target="_blank">Camil Demetrescu</a> (demetres [at] dis.uniroma1.it).
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<br /><br />
+
+				<h2 id="projects">Projects</h2>
+				<hr>
+
+				<div>
+					<div style="float: left; padding-right: 40px;">
+						<img src="assets/img/aprof.png" alt="aprof: input-sensitive profiler">
+					</div>
+					<div>
+						<h3><a href="https://github.com/ercoppa/aprof/wiki">aprof</a> - input-sensitive profiling</h3>
+						aprof is a Valgrind tool for performance profiling designed to help developers discover hidden asymptotic
+						inefficiencies in the code. From one or more runs of a program, aprof measures how the performance of individual
+						routines scales as a function of the input size, yielding clues to its growth rate. <br />
+						<u><i>Related papers:</i></u> <a href="#CDF-PLDI12">[CDF-PLDI12]</a> <a href="#CDFM-CGO14">[CDFM-CGO14]</a> <a
+						 href="#CDF-TSE14">[CDF-TSE14]</a> <a href="#C-VAL14">[C-VAL14]</a>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+
+				<br /><br />
+
+				<div>
+					<div style="float: left; padding-right: 40px; padding-left: 25px;">
+						<img src="assets/img/diagram.png" style="height: 160px;" alt="hadoop internals">
+					</div>
+					<div>
+						<h3><a href="http://ercoppa.github.io/HadoopInternals/">Hadoop Internals</a> - Diagrams</h3>
+						This project contains several diagrams describing Apache Hadoop internals (2.3.0 or later).
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+
+				<br /><br />
+
+				<div>
+					<div style="float: left; padding-right: 40px; padding-left: 25px;">
+						<img src="assets/img/nearestfit.png" style="height: 160px;" alt="nearestfit: mapreduce progress indicator">
+					</div>
+					<div>
+						<h3><a href="mailto:coppa@dis.uniroma1.it?Subject=Info%20NearestFit" target="_top">NearestFit</a> - predicting
+							MapReduce performance</h3>
+						The NearestFit progress indicator targets accuracy of progress predictions for MapReduce jobs in the presence of
+						data skewness and super-linear computations. This is achieved combining performance profiling, machine learning
+						techniques, and data streaming algorithms.
+						<br />
+						<u><i>Related papers:</i></u> <a href="#CF-SOCC15">[CF-SOCC15]</a>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+
+				<br /><br />
+
+
+				<h2 id="publications">Publications</h2>
+				<hr>
+
+				<ul class="pub">
+
+					<li :id="p.id" v-for="p in publications">
+						[{{ p.id }}]
+						<span v-html="p.authors.replace('Emilio Coppa', '<b>Emilio Coppa</b>')"></span>.
+						{{ p.title }}.
+						<span v-html="p.conference.replace('Best Paper Award', '<b>Best Paper Award</b>')"></span><span v-if="!p.series">,</span>
+						<span v-if="p.series">(<b>{{ p.series }}</b>),</span>
+						<span v-if="p.volume"> {{ p.volume }},</span>
+						<span v-if="p.pages"> pp {{ p.pages }},</span>
+						{{ p.year }}.
+						<a v-if="p.doi" target="_blank" :href="p.doi">[DOI]</a>
+						<a v-if="p.pdf" target="_blank" :href="p.pdf">[PDF]</a>
+						<a v-if="p.slides" target="_blank" :href="p.slides">[SLIDES]</a>
+						<a v-if="p.project" target="_blank" :href="p.project">[PROJECT SITE]</a>
+					</li>
+
 				</ul>
-			</div>
-			<div class="content">
-				<div class="main">
 
-					<h2 id="info">Info</h2>
-					<hr>
+				<br /><br />
 
-					<div style="padding-left: 20px;">
+				<h2 id="teaching">Teaching</h2>
+				<hr>
 
-						<b>Research interests:</b>
-						<div style="padding-left: 20px; padding-top: 10px;">My main research interests are in programming languages, software systems and program analysis. During my PhD, I focused my work on the study of performance scalability of software systems. In the last two years, I have investigated how program analysis techniques, such as symbolic execution, can be exploited in the context of cybersecurity.</div>
-
-						<br/>
-
-						<div style="display: table;">
-
-							<div style="display: table-row;">
-								<div style="display: table-cell; padding-right: 25px;">
-									<b>Position:</b>
-								</div>
-								<div style="display:table-cell;">
-									PostDoc at <a href="http://www.dis.uniroma1.it/">DIAG</a> with Prof. <a href="http://www.dis.uniroma1.it/~demetres/" target="_blank">Camil Demetrescu</a>. 
-									Member of <a href="http://season-lab.github.io" target="_blank"><b>SEASON Lab</b></a>.<br />
-									Member of <a href="http://www.cis.uniroma1.it/en" target="_blank"><b>CIS Sapienza</b></a> research center for Cyber Intelligence and Information Security.<br />
-									Member of <a href="http://cyberchallenge.it" target="_blank"><b>CyberChallenge.IT</b></a> organizing team.
-								</div>
-							</div>
-
-							<br />
-							
-							<div style="display:table-row;">
-								<div style="display:table-cell; padding-right: 10px;">
-									<b>Email:</b>
-								</div>
-								<div style="display:table-cell;">
-									coppa [at] diag.uniroma1.it
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell; padding-right: 10px;">
-									<b>Office:</b>
-								</div>
-								<div style="display:table-cell;">
-									DIAG, Via Ariosto 25, Rome - 1st floor, room B118
-								</div>
-							</div>
-
-							<br/>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell; padding-right: 10px;">
-									<b>Full CV:</b>
-								</div>
-								<div style="display:table-cell;">
-									<a href="https://github.com/ecoppa/ecoppa.github.io/raw/master/cv.pdf">[PDF]</a>
-								</div>
-							</div>
-													
-						</div>
-					</div>
-
-					<br/><br/>
-
-					<h2 id="education">Education</h2>
-					<hr>
-
-					<div style="padding-left: 20px;">
-
-						<div style="display: table; border-collapse: separate; width: 100%;">
-
-							<div style="display:table-row;">
-								<div style="display:table-cell; width: 20%;">
-									Jan 2016 - Present
-								</div>
-								<div style="display:table-cell;">
-									<b>PostDoc</b> at Sapienza University of Rome<br/>with Prof. <a href="http://www.dis.uniroma1.it/~demetres/" target="_blank">Camil Demetrescu</a> (demetres [at] dis.uniroma1.it).
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									Oct 2012 - Dic 2015
-								</div>
-								<div style="display:table-cell;">
-									<b>Ph.D.</b>&nbsp;<b>in Computer Science</b> at Sapienza University of Rome. <br/>Advisor: Prof. <a href="http://wwwusers.di.uniroma1.it/~finocchi/" target="_blank">Irene Finocchi</a> (finocchi [at] di.uniroma1.it).
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									Apr 2015 - Jul 2015
-								</div>
-								<div style="display:table-cell;">
-									<b>Visitor at TU Darmstadt.</b> <br/>Prof. <a href="https://www.cs.purdue.edu/homes/peugster/" target="_blank">Patrick Eugster</a> (peugster [at] cs.purdue.edu).
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									Oct 2010 - Oct 2012
-								</div>
-								<div style="display:table-cell;">
-									<b>Master of Science in Engineering in Computer Science</b> (taught in English) at Sapienza University of Rome. GPA 29.57/30. Final grade: 110/110 summa cum laude.<br/>Thesis Advisor: Prof.  <a href="http://www.dis.uniroma1.it/~demetres/" target="_blank">Camil Demetrescu</a> (demetres [at] dis.uniroma1.it). 
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-								<div style="display:table-cell;">
-									<hr style="margin: 10px 0 10px 0;" />
-								</div>
-							</div>
-
-							<div style="display:table-row;">
-								<div style="display:table-cell;">
-									Sept 2007 - Oct 2010
-								</div>
-								<div style="display:table-cell;">
-									<b>Bachelor of Science in&nbsp;</b><b>Engineering in Computer Science</b><b>&nbsp;</b>at Sapienza University of Rome. GPA: 26.7/30. Final grade: 110/110. <br/>Thesis advisor: Prof. <a href="http://www.dis.uniroma1.it/~demetres/" target="_blank">Camil Demetrescu</a> (demetres [at] dis.uniroma1.it).
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-					<br/><br/>
-
-					<h2 id="projects">Projects</h2>
-					<hr>
-
-					<div>
-						<div style="float: left; padding-right: 40px;">
-							<img src="assets/img/aprof.png" alt="aprof: input-sensitive profiler">
-						</div>
-						<div>
-							<h3><a href="https://github.com/ercoppa/aprof/wiki">aprof</a> - input-sensitive profiling</h3>
-							aprof is a Valgrind tool for performance profiling designed to help developers discover hidden asymptotic inefficiencies in the code. From one or more runs of a program, aprof measures how the performance of individual routines scales as a function of the input size, yielding clues to its growth rate. <br/>
-							<u><i>Related papers:</i></u> <a href="#CDF-PLDI12">[CDF-PLDI12]</a> <a href="#CDFM-CGO14">[CDFM-CGO14]</a> <a href="#CDF-TSE14">[CDF-TSE14]</a> <a href="#C-VAL14">[C-VAL14]</a>
-						</div>
-						<div style="clear: both;"></div>
-					</div>
-
-					<br/><br/>
-
-					<div>
-						<div style="float: left; padding-right: 40px; padding-left: 25px;">
-							<img src="assets/img/diagram.png" style="height: 160px;" alt="hadoop internals">
-						</div>
-						<div>
-							<h3><a href="http://ercoppa.github.io/HadoopInternals/">Hadoop Internals</a> - Diagrams</h3>
-							This project contains several diagrams describing Apache Hadoop internals (2.3.0 or later). 
-						</div>
-						<div style="clear: both;"></div>
-					</div>
-
-					<br/><br/>
-
-					<div>
-						<div style="float: left; padding-right: 40px; padding-left: 25px;">
-							<img src="assets/img/nearestfit.png" style="height: 160px;" alt="nearestfit: mapreduce progress indicator">
-						</div>
-						<div>
-							<h3><a href="mailto:coppa@dis.uniroma1.it?Subject=Info%20NearestFit" target="_top">NearestFit</a> - predicting MapReduce performance</h3>
-							The NearestFit progress indicator targets accuracy of progress predictions for MapReduce jobs in the presence of data skewness and super-linear computations. This is achieved combining performance profiling, machine learning techniques, and data streaming algorithms.
-							<br/>
-							<u><i>Related papers:</i></u> <a href="#CF-SOCC15">[CF-SOCC15]</a>
-						</div>
-						<div style="clear: both;"></div>
-					</div>
-
-					<br/><br/>
-
-
-					<h2 id="publications">Publications</h2>
-					<hr>
-					
-					<ul class="pub">
-
-						<li :id="p.id" v-for="p in publications">
-							[{{ p.id }}] 
-							<span v-html="p.authors.replace('Emilio Coppa', '<b>Emilio Coppa</b>')"></span>. 
-							{{ p.title }}. 
-							<span v-html="p.conference.replace('Best Paper Award', '<b>Best Paper Award</b>')"></span><span v-if="!p.series">,</span>
-							<span v-if="p.series">(<b>{{ p.series }}</b>),</span>
-							<span v-if="p.volume"> {{ p.volume }},</span>
-							<span v-if="p.pages"> pp {{ p.pages }},</span>
-							{{ p.year }}. 
-							<a v-if="p.doi" target="_blank" :href="p.doi">[DOI]</a>
-							<a v-if="p.pdf" target="_blank" :href="p.pdf">[PDF]</a>
-							<a v-if="p.slides" target="_blank" :href="p.slides">[SLIDES]</a>
-							<a v-if="p.project" target="_blank" :href="p.project">[PROJECT SITE]</a>
-						</li>
-
-					</ul>
-
-					<br/><br/>
-
-					<h2 id="teaching">Teaching</h2>
-					<hr>
-
-					<ul>
-						<li><b>[2017-2018] Sistemi di calcolo I</b>: docente. <a href="http://www.dis.uniroma1.it/~sc/">Sito</a>.</li>
-						<li><b>[2016-2017] Sistemi di calcolo I</b>: tutor delle esercitazioni. <a href="http://wwwold.diag.uniroma1.it/~sc/wikka.php?wakka=EsecCorso1617">Materiale delle esercitazioni</a>.</li>
-						<li><b>[2015-2016] Fondamenti di Informatica II</b>: tutor delle esercitazioni
-							<ul>
-								<li>
-									<a href="https://sites.google.com/a/dis.uniroma1.it/fondamenti-di-informatica-ii-progettazione-del-software-2015-16/material">Progettazione del Software</a>: Prof. De Giacomo
-								</li>
-								<li>
-									<a href="http://www.dis.uniroma1.it/~fiii/materiale_esercitazioni.html">Algoritmi e Strutture Dati</a>: Prof. D'Amore
-								</li>
-							</ul>
-						</li>
-					</ul>
-
-				</div>
+				<ul>
+					<li><b>[2017-2018] Sistemi di calcolo I</b>: docente. <a href="http://www.dis.uniroma1.it/~sc/">Sito</a>.</li>
+					<li><b>[2016-2017] Sistemi di calcolo I</b>: tutor delle esercitazioni. <a href="http://wwwold.diag.uniroma1.it/~sc/wikka.php?wakka=EsecCorso1617">Materiale
+							delle esercitazioni</a>.</li>
+					<li><b>[2015-2016] Fondamenti di Informatica II</b>: tutor delle esercitazioni
+						<ul>
+							<li>
+								<a href="https://sites.google.com/a/dis.uniroma1.it/fondamenti-di-informatica-ii-progettazione-del-software-2015-16/material">Progettazione
+									del Software</a>: Prof. De Giacomo
+							</li>
+							<li>
+								<a href="http://www.dis.uniroma1.it/~fiii/materiale_esercitazioni.html">Algoritmi e Strutture Dati</a>: Prof.
+								D'Amore
+							</li>
+						</ul>
+					</li>
+				</ul>
 
 			</div>
 
-			<div class="footer">
-				Emilio Coppa - Sapienza University of Rome
-			</div>
 		</div>
 
-		<script>
-var app = new Vue({
-  el: '#app',
-  data: {
-    publications: []
-  },
-  methods: {
-    getPublications: function () {
-    	var vue = this;
-		$.get('publications.json', function(data) {
-			vue.publications = data.publications;
-		})
-    }
-  },
-  created () {
-    this.getPublications()
-  }
+		<div class="footer">
+			Emilio Coppa - Sapienza University of Rome
+		</div>
+	</div>
 
-})
-		</script>
-	</body>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				publications: []
+			},
+			methods: {
+				getPublications: function () {
+					var vue = this;
+					$.get('publications.json', function (data) {
+						vue.publications = data.publications;
+					})
+				}
+			},
+			created() {
+				this.getPublications()
+			}
+
+		})
+	</script>
+</body>
+
 </html>
