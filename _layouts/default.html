@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ page.title }} - Sapienza University of Rome</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" lang="en" content="Emilio Coppa - Academic page - Sapienza University of Rome">
+	<meta name="author" content="Emilio Coppa">
+	<meta name="robots" content="index, follow">
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Override CSS file - add your own CSS rules -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!-- Start Google Analytics code -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-75279417-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics code -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  	<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+</head>
+
+<body>
+	<div id="app" class="container">
+		<div class="header">
+			<div style="float: left; margin: -23px 5px 0px -5px;">
+				<img src="assets/img/sapienza.png" alt="sapienza logo" />
+			</div>
+			<div class="header-title">
+				<h2 class="header-heading">Emilio Coppa</h2>
+				<h3 class="header-heading">Sapienza University of Rome </h3>
+			</div>
+
+		</div>
+		<div class="nav-bar">
+			<ul class="nav">
+				<li><a href="/#info">Info</a></li>
+				<li><a href="/#education">Education</a></li>
+				<li><a href="/#projects">Projects</a></li>
+				<li><a href="/#publications">Publications</a></li>
+				<li><a href="/#teaching">Teaching</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="main">
+
+{{ content }}
+
+			</div>
+
+		</div>
+
+		<div class="footer">
+			Emilio Coppa - Sapienza University of Rome
+		</div>
+	</div>
+
+	<script src="assets/js/citation.js" type="text/javascript"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
