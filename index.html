@@ -363,10 +363,7 @@ title: Emilio Coppa - Academic Page - Sapienza University of Rome
     <span v-if="p.volume"> {{ p.volume }}<span v-if="p.issue">({{ p.issue }})</span>,</span>
     <span v-if="p.page"> pp {{ p.page }},</span>
     -->
-						{{ p.issued['date-parts'][0][0] }}
-						<span v-if="p.note">.</span>
-						<span v-if="p.note"><b>{{ p.note }}</b></span>
-						.
+						{{ p.issued['date-parts'][0][0] }}<span v-if="p.note">.</span><span v-if="p.note"><b>{{ p.note }}</b></span>.
 						<a v-if="p.DOI" target="_blank" :href="'https://www.doi.org/' + p.DOI">[DOI]</a>
 						<a v-else-if="p.URL" target="_blank" :href="p.URL">[DOI]</a>
 						<a v-if="p.url_pdf" target="_blank" :href="p.url_pdf">[PDF]</a>
